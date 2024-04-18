@@ -1,0 +1,25 @@
+body.boissons{
+    background-color: red;
+}
+
+body.sucre{
+    background-color: orange;
+}
+
+body.ready{
+    background-color: green;
+}
+
+.allDrinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.allDrinks button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.allDrinks button img {
+    width: 50px;
+}

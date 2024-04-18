@@ -6,7 +6,7 @@
     <title>Niveau de sucre</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="sucre">
     
 </body>
 </html>

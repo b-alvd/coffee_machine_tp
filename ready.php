@@ -6,7 +6,7 @@
     <title>Votre café est prêt</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="ready">
     
 </body>
 </html>
