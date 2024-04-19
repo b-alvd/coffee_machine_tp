@@ -10,16 +10,29 @@ body.ready{
     background-color: green;
 }
 
-.allDrinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+h1 {
+    text-align: center;
+    color: white;
 }
+
+.sectionDrinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.allDrinks {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+}
+
 .allDrinks button {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
+
 .allDrinks button img {
     width: 50px;
 }

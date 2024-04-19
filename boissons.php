@@ -64,16 +64,18 @@
     </head>
     <body class="boissons">
         <h1>Choisissez votre boisson :</h1>
-        <div class="allDrinks">
-            <form action="sucre.php" method="POST" class="formDrinks">
-            <?php
-            foreach ($drinks as $key => $drink) {
-                echo '<button type="submit" name="bouton' . $key . '">';
-                echo '<img class="troudbal" src=' . $drink['image'] . ' alt=' . $drink['alt'] . '>';
-                echo $drink['name'];
-                echo '</button>';
-            }
-            ?>
-        </div>
+        <section class="sectionDrinks">
+            <div class="allDrinks">
+                <form action="sucre.php" method="POST" class="formDrinks">
+                <?php
+                foreach ($drinks as $key => $drink) {
+                    echo '<button type="submit" name="bouton' . $key . '">';
+                    echo '<img class="troudbal" src=' . $drink['image'] . ' alt=' . $drink['alt'] . '>';
+                    echo $drink['name'];
+                    echo '</button>';
+                }
+                ?>
+            </div>
+        </section>
     </body>
 </html>
