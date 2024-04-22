@@ -4,13 +4,19 @@ body.boissons{
 
 body.sucre{
     background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body.ready{
     background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
+body.boissons h1 {
     text-align: center;
     color: white;
 }
@@ -26,13 +32,24 @@ h1 {
     justify-content: center;
 }
 
-.allDrinks button {
+.allDrinks a {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid blue;
+    border-radius: 15%;
+    background-color: white;
+    margin: 20px 0;
 }
 
-.allDrinks button img {
+.allDrinks a img {
     width: 50px;
+}
+
+body.ready img {
+    margin-top: 100px;
+    width: 200px;
 }

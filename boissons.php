@@ -66,15 +66,18 @@
         <h1>Choisissez votre boisson :</h1>
         <section class="sectionDrinks">
             <div class="allDrinks">
-                <form action="sucre.php" method="POST" class="formDrinks">
+                <form action="sucre.php" method="GET">
                 <?php
-                foreach ($drinks as $key => $drink) {
-                    echo '<button type="submit" name="bouton' . $key . '">';
-                    echo '<img class="troudbal" src=' . $drink['image'] . ' alt=' . $drink['alt'] . '>';
-                    echo $drink['name'];
-                    echo '</button>';
+                foreach ($drinks as $drink) {
+                ?>
+                    <a href="<?php echo("sucre.php?drink=".$drink["name"]."&image=".$drink["image"]."&alt=".$drink["alt"]) ?>">
+                        <img src="<?php echo($drink["image"]) ?>" alt="<?php echo($drink["alt"]) ?>">
+                        <p><?php echo($drink["name"])?></p>
+                    </a>
+                <?php
                 }
                 ?>
+                </form>
             </div>
         </section>
     </body>
