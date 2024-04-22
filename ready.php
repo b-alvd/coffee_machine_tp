@@ -22,5 +22,6 @@
         }
     ?></h1>
     <img src="<?php echo($img) ?>" alt="<?php echo($alt) ?>">
+    <a href="boissons.php">Revenir au début</a>
 </body>
 </html>

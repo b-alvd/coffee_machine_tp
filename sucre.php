@@ -34,6 +34,6 @@
     <input type="hidden" name="alt" value="<?php echo($alt) ?>">
     <button type="submit">Payer</button>
     </form>
-
+    <a href="boissons.php">Annuler ma commande</a>
 </body>
 </html>
